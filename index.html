@@ -9,13 +9,13 @@
         @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;1,700&family=Inter:wght@200;400;600&display=swap');
         :root { --alabaster: #F9F8F6; --olive-deep: #3D4435; }
         body { font-family: 'Inter', sans-serif; background-color: var(--alabaster); color: var(--olive-deep); }
-        .serif { font-family: 'Bodoni+Moda', serif; }
+        .serif { font-family: 'Bodoni Moda', serif; }
         .arch-card { border-radius: 120px 120px 0 0; border: 1px solid rgba(61, 68, 53, 0.1); }
         .logo-fade { animation: fadeIn 2s ease-in; }
         @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
     </style>
 </head>
-<body>
+<body class="antialiased">
 
     <header class="p-10 bg-white text-center border-b border-gray-50">
         <div class="inline-flex flex-col items-center">
@@ -25,7 +25,6 @@
     </header>
 
     <main class="max-w-md mx-auto px-6 pt-10 pb-32">
-        
         <section class="text-center">
             <div class="arch-card bg-white p-6 mb-8 shadow-sm">
                 <h2 class="serif text-2xl italic mb-4">Founding Member</h2>
@@ -39,8 +38,9 @@
                     <span class="text-xl font-light tracking-tighter">£25.00</span>
                 </div>
 
-                <a href="https://buy.stripe.com/9B63cv7LP6Sq8Sk59q6Vq0"
-                   class="block w-full bg-[#3D4435] text-white py-5 text-[10px] tracking-[0.3em] uppercase hover:bg-black transition-all shadow-lg">
+                <a href="https://buy.stripe.com/9B63cv7LP6Sq8Sk59q6Vq0" 
+                   rel="noopener noreferrer"
+                   class="block w-full bg-[#3D4435] text-white py-5 text-[10px] text-center tracking-[0.3em] uppercase hover:bg-black transition-all shadow-lg no-underline">
                     JOIN THE COLLECTIVE
                 </a>
             </div>
@@ -49,7 +49,6 @@
                 © 2026 Amanah Co. & Gemini Collaboration. All Rights Reserved.
             </p>
         </section>
-
     </main>
 
     <footer class="fixed bottom-0 left-0 w-full bg-white/80 backdrop-blur-md p-6 flex justify-around text-[9px] tracking-widest uppercase opacity-40 border-t border-gray-100">
